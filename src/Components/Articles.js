@@ -6,18 +6,24 @@ import '../Articles.css';
 class Articles extends Component {
   render (){
     console.log(this.props)
+
     let articleItems;
+    let info = this.props.articles;
     if(this.props.articles){
-      articleItems = this.props.articles.map(item => {
-        //console.log(item)
+      articleItems = info.map((item) => {
+        console.log(item)
+        var arr = []
+        for(var i =0; i<10; i++){
+          arr.push(<ArticleItem item={info[1][i]} content={info[2][i]} key={info[1][i]}/>)
+        }
         return(
-          <ArticleItem item={item} key={item.title}/>
+          arr
         )
       });
     }
     return (
       <div className="Articles">
-        {articleItems}
+       {articleItems[1]}
       </div>
     )
   }

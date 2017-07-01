@@ -2,38 +2,33 @@ import React, { Component } from 'react';
 import Articles from './Components/Articles';
 import './App.css';
 
+import $ from 'jquery';
+
 class App extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state={
       articles: []
-    }
+    };
   }
 
   componentWillMount(){
-    this.setState({
-      articles: [
-        {
-          title: 'Raila',
-          content: 'The Rt Hon Prime Minister of Kenya'
-        },
-        {
-          title: 'Raila Odinga',
-          content: 'The Opposition leader of Kenya'
-        },
+    $.ajax({
+      url: 'https://en.wikipedia.org/w/api.php?action=opensearch&search=Uhuru&format=json&callback=?',
+      dataType: 'jsonp',
+      success:(data) => {
+        //console.log(Object.keys(data[1]))
+          this.setState({
+            articles: data
+          })
 
-        {
-          title: 'Raila Amollo',
-          content: 'The NASA leader'
-        }
-      ]
-    })
+      }
+    },  'jsonp')
   }
   render() {
+    console.log("ok", this.state.articles)
     return (
       <div className="App">
-        Hello World
-
         <Articles articles={this.state.articles} />
       </div>
     );

@@ -5,9 +5,13 @@ class ArticleItem extends Component {
   render(){
     return(
       <div className="ArticleItem">
-        <p><strong>{this.props.item.title}</strong>
-        <br />
-        {this.props.item.content}</p>
+        <div className="title">
+          <strong>{this.props.item}</strong>
+        </div>
+
+        <div className="title">
+          {this.props.content}
+        </div>
       </div>
     );
   }
