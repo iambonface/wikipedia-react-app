@@ -29,7 +29,7 @@ class App extends Component {
       <div className="App">
         Hello World
 
-        <Articles title={this.state.articles} content={this.state.articles} />
+        <Articles articles={this.state.articles} />
       </div>
     );
   }
