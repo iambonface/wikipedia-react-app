@@ -4,9 +4,10 @@ import '../Articles.css';
 
 class Articles extends Component {
   render (){
+    console.log(this.props)
     return (
       <div className="Articles">
-        <h2>Articles</h2>
+
       </div>
     )
   }
