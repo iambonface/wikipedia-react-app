@@ -6,6 +6,12 @@ class App extends Component {
   constructor(){
     super();
     this.state={
+      articles: []
+    }
+  }
+
+  componentWillMount(){
+    this.setState({
       articles: [
         {
           title: 'Raila',
@@ -20,9 +26,8 @@ class App extends Component {
           title: 'Raila Amollo',
           content: 'The NASA leader'
         }
-
       ]
-    }
+    })
   }
   render() {
     return (
