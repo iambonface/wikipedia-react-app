@@ -14,7 +14,7 @@ class Articles extends Component {
         console.log(item)
         var arr = []
         for(var i =0; i<10; i++){
-          arr.push(<ArticleItem item={info[1][i]} content={info[2][i]} key={info[1][i]}/>)
+          arr.push(<ArticleItem item={info[1][i]} content={info[2][i]} url={info[3][i]} key={info[1][i]}/>)
         }
         return(
           arr

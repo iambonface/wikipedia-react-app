@@ -5,16 +5,17 @@ class ArticleItem extends Component {
   render(){
     return(
       <div className="ArticleItem">
-        <div className="title">
-          <strong>{this.props.item}</strong>
-        </div>
+        <a href={this.props.url} target="_blank" rel="nofollow noopener noreferrer">
+            <div className="title">
+              <strong>{this.props.item}</strong>
+            </div>
 
-        <div className="title">
-          {this.props.content}
-        </div>
+            <div className="title">
+              {this.props.content}
+            </div>
+        </a>
       </div>
     );
   }
 }
-
 export default ArticleItem;
