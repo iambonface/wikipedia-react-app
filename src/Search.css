@@ -1,0 +1,48 @@
+.input-container{
+	margin: 0px auto;
+	margin-top: 40px;
+	height: 60px;
+	text-align: center;
+}
+.search{
+	margin-top: 10px;
+}
+
+input[type="text"]{
+	width: 280px;
+	padding: 5px;
+	height: 39px;
+	border-radius: 0px;
+	background-color: #fff;
+	border: none;
+	border: 1px solid #a2a9b1;
+	transition: all .6s ease-in;
+}
+
+input[type="text"]:focus{
+	outline: none;
+	width: 360px;
+	border: 2px solid #36c;
+}
+
+
+.btn-search{
+	height: 40px;
+	width: 50px;
+	padding: 5px;
+	background-color: #36c;
+	margin-left: 10px;
+	color: #fff;
+	border-radius: 0px;
+}
+
+@media screen and (max-width: 480px){
+
+	input[type="text"]{
+		width: 200px;
+	}
+	input[type="text"]:focus{
+		width: 280px;
+	}
+
+}

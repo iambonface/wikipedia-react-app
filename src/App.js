@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Articles from './Components/Articles';
+import Search from './Components/Search';
 import './App.css';
 
 import $ from 'jquery';
@@ -9,26 +10,38 @@ class App extends Component {
     super(props);
     this.state={
       articles: []
-    };
+     };
   }
 
   componentWillMount(){
+    this.callAPI();
+  }
+
+  onUpdateQuery = (val) => {
+    this.callAPI(val)
+  }
+
+  callAPI(q = " "){
+    console.log("num", q.split(''))
+    if( (q.split('').length) > 0){
+      var url = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${q}&format=json&callback=?`
+    }
+
     $.ajax({
-      url: 'https://en.wikipedia.org/w/api.php?action=opensearch&search=Uhuru&format=json&callback=?',
+      url: url,
       dataType: 'jsonp',
       success:(data) => {
-        //console.log(Object.keys(data[1]))
           this.setState({
             articles: data
           })
-
       }
     },  'jsonp')
   }
+
   render() {
-    console.log("ok", this.state.articles)
     return (
       <div className="App">
+        <Search onUpdate = {this.onUpdateQuery} />
         <Articles articles={this.state.articles} />
       </div>
     );
