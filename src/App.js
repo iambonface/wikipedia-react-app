@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
-import Articles from './Components/Articles';
-import Header from './Components/Header';
-import Search from './Components/Search';
+import React, { Component }   from 'react';
+
+import Articles               from './Components/Articles';
+import Header                 from './Components/Header';
+import Search                 from './Components/Search';
+
 import './App.css';
 
 import $ from 'jquery';

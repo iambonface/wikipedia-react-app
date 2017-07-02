@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import ArticleItem from './ArticleItem';
+import React, { Component }     from 'react';
+
+import ArticleItem              from './ArticleItem';
 
 import '../Articles.css';
 

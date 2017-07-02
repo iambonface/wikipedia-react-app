@@ -9,20 +9,21 @@
 }
 
 input[type="text"]{
-	width: 280px;
+	width: 380px;
 	padding: 5px;
 	height: 39px;
 	border-radius: 0px;
 	background-color: #fff;
 	border: none;
-	border: 1px solid #a2a9b1;
+	/*border: 1px solid #a2a9b1;*/
+	border: 2px solid #36c;
 	transition: all .6s ease-in;
 }
 
 input[type="text"]:focus{
 	outline: none;
-	width: 360px;
-	border: 2px solid #36c;
+	width: 400px;
+	border: 3px solid #36c;
 }
 
 

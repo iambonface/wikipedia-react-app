@@ -1,4 +1,19 @@
+ @import url('https://fonts.googleapis.com/css?family=Raleway');
 .ArticleItem{
-  border: 3px solid blue;
-  margin: 3px;
+  margin-left: 55px;
+	margin-right: 55px;
+	display: block;
+	padding: 8px;
+	box-shadow: 1px 1px 1px 0px;
+	margin-bottom: 10px;
+  margin-top: 5px;
+	background-color: #e7e7e7;
+  font-family: 'Raleway', sans-serif;
+}
+a{
+  text-decoration: none;
+
+}
+.title{
+  color: #000;
 }
