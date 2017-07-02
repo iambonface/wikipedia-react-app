@@ -18,6 +18,7 @@ input[type="text"]{
 	/*border: 1px solid #a2a9b1;*/
 	border: 2px solid #36c;
 	transition: all .6s ease-in;
+	
 }
 
 input[type="text"]:focus{

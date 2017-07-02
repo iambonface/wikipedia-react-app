@@ -1,6 +1,7 @@
 import React, { Component }   from 'react';
 
 import Articles               from './Components/Articles';
+import Footer                 from './Components/Footer';
 import Header                 from './Components/Header';
 import Search                 from './Components/Search';
 
@@ -47,6 +48,7 @@ class App extends Component {
         <Header />
         <Search onUpdate = {this.onUpdateQuery} />
         <Articles articles={this.state.articles} />
+        <Footer linkedin ="iambonface" />
       </div>
     );
   }
