@@ -10,7 +10,6 @@
 
 input[type="text"]{
 	width: 380px;
-	padding: 5px;
 	height: 39px;
 	border-radius: 0px;
 	background-color: #fff;
@@ -18,12 +17,14 @@ input[type="text"]{
 	/*border: 1px solid #a2a9b1;*/
 	border: 2px solid #36c;
 	transition: all .6s ease-in;
-	
+	margin-right: 0px;
+	outline: inherit;
+
 }
 
 input[type="text"]:focus{
 	outline: none;
-	width: 400px;
+	width: 480px;
 	border: 3px solid #36c;
 	border-top: none;
 	border-left: none;
@@ -32,13 +33,20 @@ input[type="text"]:focus{
 
 
 .btn-search{
-	height: 40px;
-	width: 50px;
-	padding: 5px;
+	height: 39px;
+	width: 39px;
 	background-color: #36c;
-	margin-left: 10px;
+	margin-left:0px;
 	color: #fff;
 	border-radius: 0px;
+	border: 3px solid #36c;
+	outline: inherit;
+	margin-bottom: 2px;
+}
+.btn-search:hover{
+	background-color: #36c;
+	border: none;
+
 }
 
 @media screen and (max-width: 480px){

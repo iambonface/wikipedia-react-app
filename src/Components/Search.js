@@ -29,6 +29,8 @@ class Search extends Component{
                      value = {this.state.query}
 										placeholder=" Search results from wikipedia.org..."
                      />
+              <button className="btn-search btn btn-primary"><i className="fa fa-search"></i></button>
+
 						</div>
 
 					</div>
