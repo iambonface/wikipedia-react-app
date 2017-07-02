@@ -49,11 +49,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App container col-xs-12">
         <Header />
         <Search onUpdate = {this.onUpdateQuery} />
-        <Random onClick ={this.handleClick} />
         <Articles articles={this.state.articles} />
+        <Random onClick ={this.handleClick} />
         <Footer medium ="iambonface" />
       </div>
     );

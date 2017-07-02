@@ -6,7 +6,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	animation: spin 20s linear infinite;
-	height: 125px;
+	height: 100px;
 	margin-top: 60px;
 }
 
@@ -23,7 +23,7 @@
 }
 .wikipedia{
 	width: 165px;
-	display: block;
+	display: flex;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 35px;

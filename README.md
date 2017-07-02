@@ -28,7 +28,7 @@
     $ atom . #I noticed Atom is user friendler with JSX but you are free to use whatever editor
 
 ## Live Preview
-<a href="http://iambonface.github.io/wikipedia-viewer">Click here to view the Wikipedia Viewer</a>
+<a href="http://wikipedia254.herokuapp.com">Click here to view the Wikipedia Viewer</a>
 
 ## Credits
 API endpoint courtesy of <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia</a>

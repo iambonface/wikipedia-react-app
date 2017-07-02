@@ -7,7 +7,7 @@
 }
 .Footer a{
 	text-decoration: none;
-	color: #ccff66;
+	color: #cccf66;
 	transition: all .8s ease-in;
   letter-spacing: 2px;
 
@@ -17,6 +17,12 @@
 	letter-spacing: 2px;
 	text-decoration: underline;
 }
+
+.Footer .view-code{
+  color: #005;
+  text-decoration: underline;
+}
+
 .Footer .footer-container{
 	text-align: center;
 	bottom: 0;
