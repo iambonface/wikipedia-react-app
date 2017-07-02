@@ -8,7 +8,7 @@ class Footer extends Component {
 	}
 	render(){
 		return (
-			<div>
+			<div className="Footer">
 				<div className="container">
 					<div className="footer-container">
 						<p>Built with ReactJS | <a href={"https://www.twitter.com/"+ this.props.linkedin} target ="_blank"

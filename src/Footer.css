@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Tinos');
 
-a{
+.Footer a{
 	text-decoration: none;
 	color: #3333fc;
 	transition: all .8s ease-in;
 
 }
-a:hover{
+.Footer a:hover{
 	color: #f90;
 	letter-spacing: 2px;
 	text-decoration: underline;
 }
-.footer-container{
+.Footer .footer-container{
 	text-align: center;
 	bottom: 0;
 	position: relative;
@@ -25,6 +25,6 @@ a:hover{
 	width: 100%;
 
 }
-.fa-heart{
+.Footer .fa-heart{
 	color: red;
 }
