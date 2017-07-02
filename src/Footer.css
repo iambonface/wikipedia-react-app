@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Tinos');
 
+.Footer .footer-container{
+  color: #000;
+}
 .Footer a{
 	text-decoration: none;
-	color: #3333fc;
+	color: #ccff66;
 	transition: all .8s ease-in;
+  letter-spacing: 2px;
 
 }
 .Footer a:hover{
-	color: #f90;
+	color: #ccff66;
 	letter-spacing: 2px;
 	text-decoration: underline;
 }

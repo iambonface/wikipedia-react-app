@@ -48,7 +48,7 @@ class App extends Component {
         <Header />
         <Search onUpdate = {this.onUpdateQuery} />
         <Articles articles={this.state.articles} />
-        <Footer linkedin ="iambonface" />
+        <Footer medium ="iambonface" />
       </div>
     );
   }
