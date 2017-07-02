@@ -19,9 +19,13 @@
     "react-scripts": "1.0.10"
 
 ## Developers guide
-    $ git clone https://github.com/iambonface/wikipedia-viewer.git yourfoldername
+    $ git clone https://github.com/iambonface/wikipedia-react-app.git yourfoldername
     $ cd yourfoldername
-    $ atom .
+    $ npm install
+    $ npm start #This will open on localhost:3000
+
+    #open new terminal, cd to project and fire up Atom
+    $ atom . #I noticed Atom is user friendler with JSX but you are free to use whatever editor
 
 ## Live Preview
 <a href="http://iambonface.github.io/wikipedia-viewer">Click here to view the Wikipedia Viewer</a>
