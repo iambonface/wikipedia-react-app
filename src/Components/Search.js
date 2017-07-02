@@ -27,7 +27,8 @@ class Search extends Component{
 				             name="search"
                      onChange = { this.updateQuery }
                      value = {this.state.query}
-										placeholder=" Search results from wikipedia.org..." />
+										placeholder=" Search results from wikipedia.org..."
+                     />
 						</div>
 
 					</div>

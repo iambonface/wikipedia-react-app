@@ -24,6 +24,9 @@ input[type="text"]:focus{
 	outline: none;
 	width: 400px;
 	border: 3px solid #36c;
+	border-top: none;
+	border-left: none;
+	border-right: none;
 }
 
 
