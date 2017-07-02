@@ -1,10 +1,11 @@
 
 ## A freeCodeCamp Wikipedia Viewer Challenge
 
-    This is a React App that consumes the Wikipedia API endpoint.The app can list matched articles as per user's filter search and has a button for user to click and display a random page.
+    This is a React App that consumes the Wikipedia API endpoint.
+    The app lists matched articles as per user's filter search. User can also click and display a random page.
 
 ## Front-end User Interface
-![screenshot_wikipedia](https://user-images.githubusercontent.com/16631356/27772573-fcdbe48c-5f6d-11e7-82a8-28e9b5eb4a08.png){:class="img-responsive"}
+![screenshot_wikipedia](https://user-images.githubusercontent.com/16631356/27772573-fcdbe48c-5f6d-11e7-82a8-28e9b5eb4a08.png)
 
 ## User Stories and Challenge Requirements
     User Story 1: I can search Wikipedia entries in a search box and see the resulting Wikipedia entries.
