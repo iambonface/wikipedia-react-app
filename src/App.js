@@ -3,6 +3,7 @@ import React, { Component }   from 'react';
 import Articles               from './Components/Articles';
 import Footer                 from './Components/Footer';
 import Header                 from './Components/Header';
+import Random                 from './Components/Random';
 import Search                 from './Components/Search';
 
 import './App.css';
@@ -42,11 +43,16 @@ class App extends Component {
     },  'jsonp')
   }
 
+  handleClick(){
+     window.open("https://en.wikipedia.org/wiki/Special:Random");
+  }
+
   render() {
     return (
       <div className="App">
         <Header />
         <Search onUpdate = {this.onUpdateQuery} />
+        <Random onClick ={this.handleClick} />
         <Articles articles={this.state.articles} />
         <Footer medium ="iambonface" />
       </div>
