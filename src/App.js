@@ -27,7 +27,7 @@ class App extends Component {
   }
 
   callAPI(q = " "){
-    console.log("num", q.split(''))
+    //console.log("num", q.split(''))
     if( (q.split('').length) > 0){
       var url = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${q}&format=json&callback=?`
     }
