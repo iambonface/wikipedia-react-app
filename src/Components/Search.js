@@ -5,7 +5,6 @@ import '../Search.css';
 class Search extends Component{
   constructor(props){
     super(props);
-    this.updateQuery = this.updateQuery.bind(this)
     this.state = {
       query: ""
     }
@@ -27,7 +26,7 @@ class Search extends Component{
 				             name="search"
                      onChange = { this.updateQuery }
                      value = {this.state.query}
-										placeholder="Search results from wikipedia.org..."
+										placeholder=" Search results from wikipedia.org..."
                      />
               <button className="btn-search btn btn-primary"><i className="fa fa-search"></i></button>
 
