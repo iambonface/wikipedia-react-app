@@ -30,8 +30,13 @@ class App extends Component {
     //console.log("num", q.split(''))
     if( (q.split('').length) > 0){
       var url = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${q}&format=json&callback=?`
-    }
 
+    } else if(q.slice(0, q.selectionStart).length === 0){
+      //Check the cursor position and ascertain if it is on positon 0
+
+      q = '['; //set the query to a value not searchable to have the url return nothing
+      url = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${q}&format=json&callback=?`
+    }
     $.ajax({
       url: url,
       dataType: 'jsonp',

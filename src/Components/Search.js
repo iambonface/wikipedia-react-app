@@ -11,7 +11,7 @@ class Search extends Component{
     }
   }
   updateQuery = (e) => {
-    console.log("this event: ",  e.target.value)
+    //console.log("this event: ",  e.target.value)
     this.props.onUpdate(e.target.value)
     this.setState({query: e.target.value})
   }
@@ -27,7 +27,7 @@ class Search extends Component{
 				             name="search"
                      onChange = { this.updateQuery }
                      value = {this.state.query}
-										placeholder=" Search results from wikipedia.org..."
+										placeholder="Search results from wikipedia.org..."
                      />
               <button className="btn-search btn btn-primary"><i className="fa fa-search"></i></button>
 
