@@ -11,7 +11,7 @@ class Search extends Component{
     }
   }
   updateQuery = (e) => {
-    console.log("this event: ",  e.target.value)
+    //console.log("this event: ",  e.target.value)
     this.props.onUpdate(e.target.value)
     this.setState({query: e.target.value})
   }
